@@ -1,0 +1,29 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2540;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a3a5a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#heroGradient)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="200" cy="200" r="150" fill="rgba(0,212,255,0.1)"/>
+  <circle cx="1700" cy="900" r="200" fill="rgba(255,215,0,0.1)"/>
+  <circle cx="1600" cy="200" r="100" fill="rgba(255,255,255,0.05)"/>
+  <circle cx="300" cy="800" r="120" fill="rgba(255,255,255,0.03)"/>
+  
+  <!-- Shield icon in center -->
+  <g transform="translate(860, 440)">
+    <path d="M100 0 L200 50 L200 150 C200 200 150 250 100 280 C50 250 0 200 0 150 L0 50 Z" 
+          fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+    <path d="M80 100 L100 120 L140 80" stroke="rgba(255,255,255,0.5)" stroke-width="6" 
+          stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

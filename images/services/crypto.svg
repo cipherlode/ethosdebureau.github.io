@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cryptoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7931a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="100" height="100" rx="15" fill="url(#cryptoGrad)"/>
+  
+  <!-- Bitcoin symbol -->
+  <path d="M50 20 C61 20 70 29 70 40 C70 47 66 53 60 56 C67 59 72 66 72 74 C72 85 63 94 52 94 L52 100 L46 100 L46 94 L38 94 L38 100 L32 100 L32 94 L24 94 L24 86 L30 86 C32 86 33 85 33 83 L33 37 C33 35 32 34 30 34 L24 34 L24 26 L32 26 L32 20 L38 20 L38 26 L46 26 L46 20 L50 20 Z M42 41 L42 52 L52 52 C56 52 59 49 59 46.5 C59 44 56 41 52 41 L42 41 Z M42 60 L42 73 L53 73 C57 73 61 70 61 66.5 C61 63 57 60 53 60 L42 60 Z" 
+        fill="white" opacity="0.95"/>
+</svg>
