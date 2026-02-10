@@ -85,18 +85,14 @@
                     </a>
                     
                     <ul class="nav-links" id="navLinks">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li class="dropdown">
-                            <a href="pages/services.html">Services <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-menu">
-                                <a href="pages/services.html#crypto">Cryptocurrency Recovery</a>
-                                <a href="pages/services.html#romance">Romance Scam Recovery</a>
-                                <a href="pages/services.html#investment">Investment Fraud</a>
-                                <a href="pages/services.html#banking">Banking Fraud</a>
-                            </div>
-                        </li>
-                        <li><a href="pages/about.html">About Us</a></li>
-                        <li><a href="pages/case-studies.html">Case Studies</a></li>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">How It Works</a></li>
+    <li><a href="#testimonials">Success Stories</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+    <li><a href="pages/contact.html" class="nav-cta">Free Consultation</a></li>
+</ul>
                         <li><a href="pages/blog.html">Resources</a></li>
                         <li><a href="pages/contact.html">Contact</a></li>
                         <li><a href="pages/contact.html" class="nav-cta">Free Consultation</a></li>
@@ -113,7 +109,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: url('images/hero/hero-bg.svg'); background-size: cover; background-position: center;">
+    <section id="home" class="hero" style="background-image: url('images/hero/hero-bg.svg'); background-size: cover; background-position: center;">
         <div class="hero-bg">
             <div class="hero-gradient"></div>
             <div class="hero-pattern"></div>
@@ -212,7 +208,7 @@
     </section>
 
     <!-- Services Preview -->
-    <section class="services-preview section-padding">
+    <section id="services" class="services-preview section-padding">
         <div class="container">
             <div class="section-header text-center fade-in">
                 <span class="section-label">Our Expertise</span>
@@ -353,7 +349,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials-section section-padding">
+    <section id="testimonials" class="testimonials-section section-padding">
         <div class="container">
             <div class="section-header text-center fade-in">
                 <span class="section-label">Success Stories</span>
@@ -452,6 +448,60 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+<section id="faq" class="section-padding" style="background: var(--gray-50);">
+    <div class="container">
+        <div class="section-header text-center fade-in">
+            <span class="section-label">FAQs</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">
+                Common questions about our recovery process
+            </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you charge upfront fees?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    No, we operate on a success-based fee structure. We only get paid when we successfully recover your funds.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How long does recovery take?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Recovery timelines vary: 4-8 weeks for simple cases, 3-6 months for complex international fraud. We'll provide a realistic timeline after assessment.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is your success rate?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    We have an 87% success rate in recovering at least partial funds. Success depends on how quickly you contact us and case complexity.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is my information confidential?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Absolutely. All client information is protected by strict confidentiality protocols and attorney-client privilege where applicable.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
@@ -554,6 +604,25 @@
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/chat.js"></script>
+    <script>
+// FAQ Toggle
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-question').addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all items
+        document.querySelectorAll('.faq-item').forEach(i => {
+            i.classList.remove('active');
+        });
+        
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+</script>
 </body>
 </html>
+
 
