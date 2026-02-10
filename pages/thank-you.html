@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Ethikos Bureau</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: linear-gradient(135deg, #0a2540 0%, #00d4ff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .thank-you-container {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            animation: slideUp 0.6s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: scaleIn 0.5s ease 0.3s backwards;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .checkmark i {
+            font-size: 3rem;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #0a2540;
+            margin-bottom: 1rem;
+        }
+
+        .message {
+            font-size: 1.125rem;
+            color: #4b5563;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .info-box {
+            background: #f0f9ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .info-box h3 {
+            color: #0a2540;
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+
+        .info-box p {
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box ul {
+            text-align: left;
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .info-box li {
+            margin-bottom: 0.5rem;
+            color: #4b5563;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #0a2540;
+            font-weight: 500;
+        }
+
+        .contact-item i {
+            color: #00d4ff;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: #00d4ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background: #00b8e6;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+        }
+
+        .countdown {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="checkmark">
+            <i class="fas fa-check"></i>
+        </div>
+
+        <h1>Thank You!</h1>
+        
+        <p class="message">
+            We've received your complaint and our recovery team has been notified. 
+            An agent will be with you shortly to discuss your case.
+        </p>
+
+        <div class="info-box">
+            <h3>📋 What Happens Next?</h3>
+            <ul>
+                <li>✅ Your case has been assigned a unique ID</li>
+                <li>📞 Our recovery specialist will contact you within <strong>24 hours</strong></li>
+                <li>📧 Check your email for a confirmation message</li>
+                <li>🔒 All your information is secure and confidential</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h3>⚡ Urgent Case?</h3>
+            <p>For immediate assistance, contact us directly:</p>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+18881234567" style="color: #0a2540; text-decoration: none;">+1 (888) 123-4567</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@ethikosbureau.org" style="color: #0a2540; text-decoration: none;">info@ethikosbureau.org</a>
+            </div>
+        </div>
+
+        <a href="../index.html" class="btn">
+            <i class="fas fa-home"></i>
+            Return to Homepage
+        </a>
+
+        <div class="countdown">
+            <p id="redirectText">Redirecting to homepage in <span id="countdown">10</span> seconds...</p>
+        </div>
+    </div>
+
+    <script>
+        // Auto redirect after 10 seconds
+        let seconds = 10;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(timer);
+                window.location.href = '../index.html';
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
