@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         if (message.includes('contact') || message.includes('call') || message.includes('speak')) {
-            return "I'd be happy to connect you with a recovery specialist! You can call us at +1 (888) 123-4567 or fill out our consultation form. Would you like me to transfer you to a specialist now?";
+            return "I'd be happy to connect you with a recovery specialist! You can message us via whatsapp at +44 7378 270609 or fill out our consultation form. Would you like me to transfer you to a specialist now?";
         }
         
         if (message.includes('thank')) {
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Default response
-        return "I understand your concern. For the best assistance, I recommend speaking with one of our recovery specialists. Would you like to schedule a free consultation call? You can also call us directly at +1 (888) 123-4567.";
+        return "I understand your concern. For the best assistance, I recommend speaking with one of our recovery specialists. Would you like to schedule a free consultation call? You can also message us via whatsapp at +44 7378 270609.";
     }
     
     // Show initial message after 3 seconds if first visit
